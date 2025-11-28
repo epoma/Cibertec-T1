@@ -55,6 +55,7 @@
                                 <state key="normal" title="Enter"/>
                                 <connections>
                                     <action selector="enterBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iXb-nW-pP8"/>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5C9-Vq-aVf"/>
                                 </connections>
                             </button>
                         </subviews>
