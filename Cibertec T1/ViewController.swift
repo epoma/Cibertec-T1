@@ -49,6 +49,11 @@ class ViewController: UIViewController {
            }
            
         let passwordTextFieldVar: String = passwordTextField.text ?? "empty"
+        if(passwordTextFieldVar.isEmpty){
+            showAlert(message:"Password Incorrecto")
+         return
+        }
+        
         print("password: \(passwordTextFieldVar)")
 
     }

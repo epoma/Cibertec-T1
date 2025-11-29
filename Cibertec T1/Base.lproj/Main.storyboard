@@ -56,6 +56,7 @@
                                 <connections>
                                     <action selector="enterBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iXb-nW-pP8"/>
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5C9-Vq-aVf"/>
+                                    <segue destination="xwB-Mu-qho" kind="show" id="si0-oy-Dua"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -74,8 +75,73 @@
             </objects>
             <point key="canvasLocation" x="-542.02898550724638" y="-79.017857142857139"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="uGS-gS-hMb">
+            <objects>
+                <viewController id="xwB-Mu-qho" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1N7-p2-6yq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Toronto" translatesAutoresizingMaskIntoConstraints="NO" id="wrU-a1-CHk">
+                                <rect key="frame" x="60" y="130" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chicago" translatesAutoresizingMaskIntoConstraints="NO" id="DKf-3B-e7G">
+                                <rect key="frame" x="250" y="133" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="USA NBA - Pre Season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKx-ki-dAg">
+                                <rect key="frame" x="101" y="58" width="212" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Neutral Location - Etihad Arena" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvS-56-hbo">
+                                <rect key="frame" x="88" y="90" width="238" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="VS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgn-fR-LuS">
+                                <rect key="frame" x="196" y="218" width="22" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBh-RP-bEE">
+                                <rect key="frame" x="101" y="301" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cL-hy-LEl">
+                                <rect key="frame" x="271" y="301" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="abO-Ni-t1W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zgn-fR-LuS" firstAttribute="centerX" secondItem="1N7-p2-6yq" secondAttribute="centerX" id="exI-al-dH9"/>
+                            <constraint firstItem="FKx-ki-dAg" firstAttribute="centerX" secondItem="1N7-p2-6yq" secondAttribute="centerX" id="u9m-G7-UHT"/>
+                            <constraint firstItem="KvS-56-hbo" firstAttribute="centerX" secondItem="1N7-p2-6yq" secondAttribute="centerX" id="wMe-ag-5SR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hzD-RO-wk2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VYL-80-o1s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147.82608695652175" y="-79.076086956521749"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Chicago" width="266" height="190"/>
+        <image name="Toronto" width="225" height="225"/>
         <image name="logo" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
